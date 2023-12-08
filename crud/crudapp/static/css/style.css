@@ -1,0 +1,89 @@
+/* Add this to your existing style.css file or create a new one */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.container div {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.container p {
+    margin: 0;
+    flex-grow: 1;
+    color: #555555;
+}
+
+.container a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #28a745;
+}
+
+.container a:hover {
+    text-decoration: underline;
+    color: #218838;
+}
+
+.confirm-btn {
+    background-color: #dc3545;
+}
+
+.cancel-btn {
+    background-color: #6c757d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    form {
+        width: 80%;
+    }
+}

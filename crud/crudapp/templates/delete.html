@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <p>Are you sure you want to delete! <strong>"{{todo}}"</strong></p>
+    <a href="{% url 'index' %}" class="cancel-btn">Cancel</a>
+
+    <form method='POST'>
+        {% csrf_token %}
+        <input type='submit' value="Confirm" class="confirm-btn">
+    </form>
+{% endblock %}

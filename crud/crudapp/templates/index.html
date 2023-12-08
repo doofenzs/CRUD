@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Django CRUD</h1>
+    <form method="POST">
+        {% csrf_token %} 
+        {{form.name}}
+        <input type="submit" value="Submit">
+    </form>
+
+    {% for todo in todos %}
+        <div>
+            <p>{{todo}}</p>
+            <a href="{% url 'update' todo.id %}" class="update-btn">Update</a>
+            <a href="{% url 'delete' todo.id %}" class="delete-btn">Delete</a>
+        </div>
+    {% endfor %}
+{% endblock %}
